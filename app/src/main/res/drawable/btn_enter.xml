@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/btnEnterTextColor"
+    tools:targetApi="lollipop">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"></solid>
+            <stroke android:color="@color/btnEnterTextColor_stroke"></stroke>
+            <corners android:radius="50px"></corners>
+        </shape>
+    </item>
+
+</ripple>

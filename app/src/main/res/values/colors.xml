@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="btnEnterTextColor">#903176</color>
+    <color name="btnEnterTextColor_stroke">#903186</color>
+    <color name="hidingTextColor">#66000000</color>
 </resources>
