@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
+    android:id="@+id/root_element"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
@@ -34,7 +35,8 @@
           android:layout_marginTop="30dp"
           android:src="@drawable/logo"
           app:layout_constraintLeft_toLeftOf="parent"
-          app:layout_constraintTop_toTopOf="parent" />
+          app:layout_constraintTop_toTopOf="parent"
+          android:contentDescription="@string/logo" />
 
       <TextView
           android:layout_width="wrap_content"
@@ -54,14 +56,15 @@
           android:background="@drawable/login_form"
           android:inputType="text"
           android:singleLine="false"
-          android:text="@string/login_form_username"
-          android:textColor="@color/hidingTextColor"
+          android:hint="@string/login_form_username"
+          android:textColorHint="@color/hidingTextColor"
           android:textSize="11sp"
           android:gravity="start|center_vertical"
           android:paddingStart="10dp"
           android:paddingTop="9sp"
           android:paddingBottom="4dp"
-          android:paddingEnd="5dp"/>
+          android:paddingEnd="5dp"
+          android:fontFamily="@font/pt_sans"/>
 
 
       <EditText
@@ -70,16 +73,17 @@
           android:layout_height="28dp"
           android:layout_marginTop="25dp"
           android:background="@drawable/password_form"
-          android:inputType="text"
+          android:inputType="textPassword"
           android:singleLine="false"
-          android:text="@string/login_form_password"
-          android:textColor="@color/hidingTextColor"
+          android:hint="@string/login_form_password"
+          android:textColorHint="@color/hidingTextColor"
           android:textSize="11sp"
           android:gravity="start|center_vertical"
           android:paddingStart="10dp"
           android:paddingTop="9sp"
           android:paddingBottom="4dp"
-          android:paddingEnd="4dp"/>
+          android:paddingEnd="4dp"
+          android:fontFamily="@font/pt_sans"/>
 
       <Button
           android:id="@+id/btnEnter"
@@ -89,7 +93,8 @@
           android:background="@drawable/btn_enter"
           android:fontFamily="@font/pt_sans"
           android:text="@string/btnEnter_name"
-          android:textColor="@color/btnEnterTextColor" />
+          android:textColor="@color/btnEnterTextColor"
+          android:onClick = "login"/>
 
    </LinearLayout>
 </RelativeLayout>

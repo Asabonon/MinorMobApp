@@ -3,7 +3,7 @@
     <string name="logo_name">Minor</string>
     <string name="authorization_name">Авторизация</string>
     <string name="btnEnter_name">Войти</string>
-
     <string name="login_form_username">Логин</string>
     <string name="login_form_password">Пароль</string>
+    <string name="logo">Logo</string>
 </resources>
