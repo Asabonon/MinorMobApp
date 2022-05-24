@@ -94,7 +94,7 @@
           android:fontFamily="@font/pt_sans"
           android:text="@string/btnEnter_name"
           android:textColor="@color/btnEnterTextColor"
-          android:onClick = "login"/>
+          />
 
    </LinearLayout>
 </RelativeLayout>

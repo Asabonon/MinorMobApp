@@ -53,35 +53,35 @@ public class MainActivity extends AppCompatActivity {
         } );
     }
 
-    private void showEnter() {
+    public void showEnter() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
 
         LayoutInflater inflater = LayoutInflater.from(this);
         View activity_main = inflater.inflate(R.layout.activity_main, null);
         dialog.setView(activity_main);
 
-        final MaterialEditText username = activity_main.findViewById(R.id.activity_main_usernameEditText);
-        final MaterialEditText pass = activity_main.findViewById(R.id.activity_main_passwordEditText);
+        final EditText username = activity_main.findViewById(R.id.activity_main_usernameEditText);
+        final EditText pass = activity_main.findViewById(R.id.activity_main_passwordEditText);
 
         dialog.setPositiveButton("Войти", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                if(TextUtils.isEmpty(username.getText().toString())) {
+                if (TextUtils.isEmpty(username.getText().toString())) {
                     Snackbar.make(root, "Введите вашу почту", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(pass.getText().toString())) {
+                if (TextUtils.isEmpty(pass.getText().toString())) {
                     Snackbar.make(root, "Введите ваш пароль", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 auth.signInWithEmailAndPassword(username.getText().toString(), pass.getText().toString())
-                    .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                        @Override
-                        public void onSuccess(AuthResult authResult) {
-                            startActivity(new Intent(MainActivity.this, MapActivity.class));
-                            finish();
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
+                        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                            @Override
+                            public void onSuccess(AuthResult authResult) {
+                                startActivity(new Intent(MainActivity.this, MapActivity.class));
+                                finish();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Snackbar.make(root, "Ошибка авторизации", Snackbar.LENGTH_SHORT).show();
@@ -90,20 +90,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        dialog.show();
     }
-       /* EditText username = (EditText) findViewById(R.id.activity_main_usernameEditText);
-        EditText password = (EditText) findViewById(R.id.activity_main_passwordEditText);
-
-        public void login (View view){
-            if (username.getText().toString().equals("admin")
-                    && password.getText().toString().equals("admin")
-            ) {
-
-                //correcct password
-            } else {
-                //wrong password
-            }*/
 
 
 }
