@@ -6,4 +6,6 @@
     <string name="login_form_username">Логин</string>
     <string name="login_form_password">Пароль</string>
     <string name="logo">Logo</string>
+    <string name="info">Приложение Minor \n\nВерсия приложения: v.0.0.1 (13.04.2022) \n\nПри обнаружении багов и ошибок просьба сообщить разработчику по электронной почте: asabin01@mail.ru</string>
+    <string name="warning_info">Нажать кнопку вызова помощи: позвонить родителям и отправить геолокацию семье с просьбой перезвонить</string>
 </resources>
