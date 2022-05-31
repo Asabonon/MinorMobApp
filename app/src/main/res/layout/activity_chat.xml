@@ -57,6 +57,7 @@
             android:layout_marginEnd="40dp"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal|top"
+            android:contentDescription="@string/logo_name"
             app:srcCompat="@drawable/img" />
     </LinearLayout>
 
@@ -78,7 +79,7 @@
             android:textSize="30sp"/>
 
         <TextView
-            android:id="@+id/tvTEnabledGPS"
+            android:id="@+id/tvEnabledGPS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp" />
@@ -104,7 +105,7 @@
             android:textSize="30sp"/>
 
         <TextView
-            android:id="@+id/tvTEnabledNet"
+            android:id="@+id/tvEnabledNet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp" />
@@ -126,6 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:onClick="onClickLocationSettings"
             android:text="@string/location_settings" />
     </LinearLayout>
 

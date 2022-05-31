@@ -56,6 +56,7 @@
             android:layout_height="267dp"
             android:layout_gravity="center"
             android:layout_marginTop="160dp"
+            android:contentDescription="@string/warning_info"
             app:srcCompat="@drawable/sos_image" />
 
         <TextView
@@ -86,6 +87,7 @@
             android:layout_marginEnd="40dp"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal|top"
+            android:contentDescription="@string/logo_name"
             app:srcCompat="@drawable/img" />
     </LinearLayout>
 </RelativeLayout>
