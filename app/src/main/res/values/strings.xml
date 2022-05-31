@@ -8,4 +8,10 @@
     <string name="logo">Logo</string>
     <string name="info">Приложение Minor \n\nВерсия приложения: v.0.0.1 (13.04.2022) \n\nПри обнаружении багов и ошибок просьба сообщить разработчику по электронной почте: asabin01@mail.ru</string>
     <string name="warning_info">Нажать кнопку вызова помощи: позвонить родителям и отправить геолокацию семье с просьбой перезвонить</string>
+
+    <string name="provider_GPS">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location_settings</string>
+
+
 </resources>

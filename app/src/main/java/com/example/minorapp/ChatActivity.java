@@ -6,8 +6,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.widget.TextView;
 
 public class ChatActivity extends AppCompatActivity {
+
+    TextView tvEnabledGPS;
+    TextView tvStatusGPS;
+    TextView tvLocationGPS;
+
+    TextView tvEnabledNet;
+    TextView tvStatusNet;
+    TextView tvLocationNet;
+
+    private LocationManager locationManager;
+    StringBuilder sbGPS = new StringBuilder();
+    StringBuilder sbNet = new StringBuilder();
+
+
+
+
 
     Button switchToInfo;
     Button switchToWarning;

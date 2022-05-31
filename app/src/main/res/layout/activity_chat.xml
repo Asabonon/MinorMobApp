@@ -8,6 +8,7 @@
     android:id="@+id/chat_element"
     tools:context=".ChatActivity">
 
+
     <FrameLayout
         android:id="@+id/layout2"
         android:layout_alignParentBottom="true"
@@ -58,4 +59,75 @@
             android:gravity="center_horizontal|top"
             app:srcCompat="@drawable/img" />
     </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="120dp">
+
+
+        <TextView
+            android:id="@+id/tvTittleGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/provider_GPS"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tvTEnabledGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvStatusGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvLocationGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvTittleNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/provider_network"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tvTEnabledNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvStatusNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvLocationNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnLocationSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/location_settings" />
+    </LinearLayout>
+
+
 </RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:id="@+id/root_element"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="25dp"
+       android:layout_marginBottom="20dp"
+       android:gravity="center"
+       android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="195dp"
+          android:fontFamily="@font/stalinist_one"
+          android:text="@string/logo_name"
+          android:textAlignment="center"
+          android:textColor="@android:color/white"
+          android:textSize="20sp" />
+
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="105dp"
+          android:layout_marginTop="30dp"
+          android:src="@drawable/logo"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:contentDescription="@string/logo" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/pt_sans"
+          android:text="@string/authorization_name"
+          android:textAlignment="center"
+          android:textColor="@android:color/white"
+          android:textSize="20sp" />
+
+
+      <Button
+          android:id="@+id/btnEnter"
+          android:layout_width="220dp"
+          android:layout_height="45dp"
+          android:layout_marginTop="47dp"
+          android:background="@drawable/btn_enter"
+          android:fontFamily="@font/pt_sans"
+          android:text="@string/btnEnter_name"
+          android:textColor="@color/btnEnterTextColor"
+          />
+
+   </LinearLayout>
+</RelativeLayout>

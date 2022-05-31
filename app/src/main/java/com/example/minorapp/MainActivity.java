@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main0);
 
         btnEnter = findViewById(R.id.btnEnter);
 
@@ -44,21 +44,23 @@ public class MainActivity extends AppCompatActivity {
         db = FirebaseDatabase.getInstance();
         users = db.getReference("Users");
 
+
+
         btnEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 showEnter();
             }
         } );
+
     }
 
     public void showEnter() {
-        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this, R.style.btnEnter);
 
         LayoutInflater inflater = LayoutInflater.from(this);
         View activity_main = inflater.inflate(R.layout.activity_main, null);
         dialog.setView(activity_main);
-
         final EditText username = activity_main.findViewById(R.id.activity_main_usernameEditText);
         final EditText pass = activity_main.findViewById(R.id.activity_main_passwordEditText);
 
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar.make(root, "Введите ваш пароль", Snackbar.LENGTH_SHORT).show();
                     return;
                 }
+
                 auth.signInWithEmailAndPassword(username.getText().toString(), pass.getText().toString())
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
@@ -89,7 +92,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        dialog.show();
+
+
+
+        AlertDialog alert = dialog.create();
+        alert.show();
+
+        Button enterButton = alert.getButton(DialogInterface.BUTTON_POSITIVE);
+        //enterButton.setBackground();
+        //dialog.show();
+
     }
 
 
